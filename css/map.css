@@ -1,0 +1,26 @@
+#map_border {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    padding-top: 60px;
+    z-index: 4;
+    background-color: lightgray;
+}
+#map {
+    position: relative;
+    top: -20px;
+    margin: 0 auto;
+    height: 90%;
+    width: 90%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+    border-radius: 20px;
+}
+#map_border p, #panel_border p{
+    color: #282828;
+    font-size: 30px;
+}

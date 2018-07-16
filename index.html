@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>777 Project 2: Lakenheath Fen Reserve</title>
+
+    <!--put your external stylesheet links here-->
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="js/leaflet_home/leaflet.zoomhome.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/buttons.css">
+
+    <!--[if IE<9]>
+        <link rel="stylesheet" href="css/style.ie.css">
+    <![endif]-->
+
+    <!--<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />-->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <script>
+        var map = null;
+        var editing = false;
+    </script>
+</head>
+
+<body>
+    <!--<div id="main">-->
+        <div id="map_border">
+            <p id="map_title"></p>
+            <div id="map_button">
+                <p onclick="openNav()">Search Form</p>
+                <a href="javascript:void(0)" id="openbtn" onclick="openNav()">&#187;</a></div>
+            <div id="map"></div>
+        </div>
+
+        <div id="panel_border">
+            <p id="panel_title">Lakenheath Fen<br>Nature Reserve</p>
+            <div id="panel_button">
+                <p onclick="closeNav()">Open Map</p>
+                <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&#171;</a></div>
+            <div id="panel">
+                <div id="form">
+                    <form>
+                        <p>Select features:</p>
+                        <input type="checkbox" id="obs">
+                        <label for="obs"> Observations</label>
+                        <div id="obs_div"></div>
+                        <input type="checkbox" id="poi">
+                        <label for="poi"> Points of Interest</label>
+                        <div id="poi_div"></div>
+                        <input type="checkbox" id="trails">
+                        <label for="trails"> Trails</label>
+                        <div id="trails_div"></div>
+                        <input type="checkbox" id="services">
+                        <label for="services"> Services</label>
+                        <div id="serv_div"></div>
+                        <input type="checkbox" id="public_t">
+                        <label for="public_t"> Public Routes</label>
+                        <div id="public_div"></div>
+                        <input type="checkbox" id="boundary">
+                        <label for="boundary"> Reserve Boundary</label>
+                        <div id="boundary_div"></div>
+                    </form>
+                    <br>
+                    <form>
+                        <label style="font-size: 18px">See something interesting?</label>
+                        <br>
+                        <label style="font-size: 18px">Share an observation.</label>
+                        <br>
+                        <select id="obs">
+                            <option value="" disabled selected style="display: none;">- Choose Observation Type - </option>
+                            <option value="wildlife">Wildlife</option>
+                            <option value="vegetation">Vegetation</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br>
+                        <label for="add_obs">Add location:</label>
+                        <a href="#" id="add_obs">Choose on map</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!--</div>-->
+
+
+    <!--put your external script links here-->
+    <script type="text/javascript" src="lib/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="js/leaflet_home/leaflet.zoomhome.js"></script>
+    <script type="text/javascript" src="js/styling.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+
+</body>
+</html>

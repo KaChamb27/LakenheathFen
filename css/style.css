@@ -1,0 +1,80 @@
+html, body, #main {
+    height: 100%;
+    width: 100%;
+    /*margin: 0px;*/
+}
+
+
+/*form styles*/
+input[type=checkbox] {
+    position: relative;
+    left: 12px;
+    top: 2px;
+}
+form label {
+    position: relative;
+    left: 16px;
+}
+#form p {
+    font-size: 22px;
+    line-height: 18px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+#form div {
+    position: relative;
+    left: 20px;
+}
+
+
+#panel_border {
+    height: 100%;
+    width: 350px;  /*set to zero*/
+    position: absolute;
+    background-color: teal;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+    z-index: 5;
+}
+#panel {
+    position: relative;
+    top: -20px;
+    margin: 0 auto;
+    height: 90%;
+    width: 90%;
+
+    background-color: skyblue;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#map_title {
+    position: relative;
+    top: -30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#panel_title {
+    position: relative;
+    top: -30px;
+    left: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#form {
+    background-color: floralwhite;
+    width: 90%;
+}
+
+#add_obs, #obs {
+    position: relative;
+    left: 20px;
+}

@@ -1,0 +1,83 @@
+#map_button p {
+    position: absolute;
+    top: 30px;
+    left: 7px;
+    font-size:15px;
+    margin-right: 50px;
+    color: #282828;
+    word-wrap: break-word;
+    width: 70px;
+    line-height: 20px;
+    text-align: center;
+}
+#openbtn {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    margin-left: 10px;
+    font-size:35px;
+    color: #282828;
+    text-decoration: none;
+    line-height: 70px;
+}
+#panel_button a:hover,
+#map_button a:hover,
+#panel_button p:hover,
+#map_button p:hover
+{
+    color: #818181;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#panel_button p {
+    position: absolute;
+    top: 30px;
+    right: 7px;
+    font-size: 15px;
+    margin-left: 50px;
+    color: #282828;
+    word-wrap: break-word;
+    width: 70px;
+    line-height: 20px;
+    text-align: center;
+}
+#closebtn {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    margin-right: 20px;
+    font-size: 35px;
+    color: #282828;
+    text-decoration: none;
+    line-height: 70px;
+}
+
+#add_tree {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: green;
+}
+#add_obs:hover {
+    -webkit-box-shadow: -1px 2px 11px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    -1x 2px 11px rgba(50, 50, 50, 1);
+    box-shadow:         -1px 2px 11px rgba(50, 50, 50, 1);
+}
+#add_obs:active {
+    position: relative; top: 1px;
+    color:black;
+}
+/*change cursor for editing*/
+.leaflet-container.crosshair-cursor-enabled {
+    cursor:crosshair;
+}
+
+#popup_button {
+    cursor: pointer;
+}
